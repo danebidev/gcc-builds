@@ -2,6 +2,8 @@ name: Build GCC trunk
 
 on:
   push:
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   build:
